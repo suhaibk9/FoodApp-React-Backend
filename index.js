@@ -21,7 +21,8 @@ app.use(
     origin: process.env.CLIENT_URL,
   })
 );
-
+//ping
+app.get('/ping', (req, res) => res.send('Pong'));
 //EndPoint for the List of restaurants
 
 app.get('/restaurants', async (req, res) => {
